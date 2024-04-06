@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.cdnfonts.com/css/aileron');
+ 
+$blue:#00CCC0;
+$text-color:#000321;
+ 
+ 
+@mixin button-border {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+ 
+.head {
+    width: 130px;
+    height: 27px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: $text-color;
+    font-family: 'Aclonica', sans-serif;
+    font-weight: 600;
+}
+ 
+hr {
+    margin-left: 10px;
+    margin-right: 10px;
+    color:  $text-color;
+    text-shadow: 5px 5px  $text-color;
+    border-top: 1px solid  $text-color;
+}
+ 
+ 
+.content {
+    .inputboxlist {
+        color: #A8A7A7;
+        margin-left: 15px;
+        width: 130px;
+        padding: 7px;
+        border-radius: 7px;
+        border: 1px solid #A8A7A7;
+        text-indent: 8px;
+        margin: 10px 10px 6px 20px;
+        font-family: 'Aileron', sans-serif;
+        font-weight: 600;
+        color:  $text-color;
+    }
+ 
+    .minusbtn {
+       @include button-border;
+        color: $blue;
+        border: 1px solid $blue;
+        background-color: #FFFFFF;
+        cursor: pointer;
+    }
+ 
+    .countbutton {
+        color: #A8A7A7;
+        width: 35px;
+        padding: 8px;
+        border-radius: 7px;
+        border: 1px solid #A8A7A7;
+        background-color: #FFFFFF;
+        margin-left: 10px;
+        text-align: center;
+        font-family: 'Aileron', sans-serif;
+        font-weight: 600;
+        color: $text-color;
+ 
+    }
+ 
+    .plusbtn {
+        @include button-border;
+        margin-left: 10px;
+        color: #FFFFFF;
+        background-color: $blue;
+        border: 0px  $blue;
+        cursor: pointer;
+ 
+    }
+}
+ 
+.enterbox {
+    .inputbox {
+ 
+        color: #A8A7A7;
+        margin-left: 15px;
+        width: 170px;
+        padding: 7px;
+        border-radius: 7px;
+        border: 1px solid #A8A7A7;
+        text-indent: 8px;
+        margin: 10px 10px 6px 20px;
+        font-family: 'Aileron', sans-serif;
+        font-weight: 600;
+        color: #000321;
+ 
+    }
+ 
+    .checkbtn {
+        @include button-border;
+        border: 0px solid #04D500;
+        background-color: #04D500;
+        color: #FFFFFF;
+ 
+    }
+ 
+    .crossbtn {
+        @include button-border;
+        margin-left: 10px;
+        border: 1px solid #D20000;
+        color: #D20000;
+        background-color: #FFFFFF;
+ 
+ 
+    }
+ 
+ 
+}
+ 
+.addbtn {
+    border: 2px solid $blue;
+    border-radius: 7px;
+    background-color: white;
+    color: $blue;
+    font-size: 14px;
+    word-spacing: 5px;
+    width: 73px;
+    padding: 6px;
+    margin: 10px 10px 6px 20px;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+ 
+}
+ 
+.submit {
+ 
+    background-color: $blue;
+    border: 0px solid $blue;
+    color: white;
+    font-size: 14px;
+    width: 180px;
+    height: 38px;
+    border-radius: 7px;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 600;
+    margin-left: 75px;
+    margin-top: 20px;
+    cursor: pointer;
+ 
+}
+ 
+.modal {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    position: fixed;
+ 
+    .modal-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+ 
+        .bill {
+            width: 42px;
+            height: 27px;
+            color: $text-color;
+            font-family: 'Aclonica', sans-serif;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 25px;
+ 
+        }
+ 
+        .close {
+            color: #222222;
+            // font-size: 16px;
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 15px;
+            color: $blue;
+            background-color: #FFFFFF;
+            border: 1px solid $blue;
+ 
+        }
+ 
+ 
+    }
+ 
+}
+ 
+ 
+ 
+ 
+.table-container {
+    margin: 5cqi 20px 20px 20px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px #999999 ;
+ 
+    table {
+        width: 100%;
+ 
+        .table-head {
+            font-family: 'Aileron', sans-serif;
+            color: #999999;
+            font-size: 14px;
+        }
+ 
+        .table-row {
+            font-family: 'Aileron', sans-serif;
+            color:  $text-color;
+            font-size: 16px;
+            font-weight: 600;
+ 
+        }
+ 
+        th {
+            text-align: center;
+            padding: 8px;
+ 
+        }
+ 
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+ 
+    }
+ 
+}
+ 
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ 
+    .amount {
+        margin-left: 13px;
+        font-family: 'Aileron', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #00CCC0;
+ 
+    }
+ 
+    .rupee {
+        margin-right: 20px;
+        font-family: 'Aileron', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+ 
+    }
+}
